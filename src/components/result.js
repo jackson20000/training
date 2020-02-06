@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function Result(props) {
     const total = Object.values(props.result).reduce((a, b) => a + b, 0)
-    console.log(props.result)
     return (
         <div>
             <h2 className="vote-head">Vote Result</h2>
