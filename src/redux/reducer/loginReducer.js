@@ -1,15 +1,10 @@
-const users = [{ username: 'jackson', password: 'password', user_id: 1 },
-{ username: 'supriya', password: 'password', user_id: 2 },
-{ username: 'suriya', password: 'password', user_id: 3 },
-{ username: 'mohanlal', password: 'password', user_id: 4 },
-{ username: 'surya', password: 'password', user_id: 4 },
-{ username: 'vijay', password: 'password', user_id: 5 },
-]
-export default (state = users, action) => {
+
+export default (state = {token: ''}, action) => {
   switch (action.type) {
     case "LOGIN_REQUEST":
       return {
-        ...state
+        ...state,
+        token: action.payload
       };
     default:
       return state;

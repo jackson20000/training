@@ -13,11 +13,9 @@ function LoginContainer(props) {
     })
       .then(function (response) {
         props.dispatch(loginRequest({ type: 'LOGIN_REQUEST', payload: response.data.token }))
-        console.log(response);
       })
       .catch(function (error) {
         NotificationManager.error('Login Failed', 'Username/password incorrect', 2000);
-        console.log(error);
       });
   }
   return (

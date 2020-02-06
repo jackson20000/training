@@ -219,3 +219,14 @@ body {
   transition: all 0.4s ease;
   text-align: center;
 }
+#main-menu .nav-bar { list-style:none; margin-bottom: 70px;padding: 0;text-align: center; }
+#main-menu .nav-bar li { display:inline; padding:0 10px; }
+
+#main-menu .nav-bar li a,#main-menu .nav-bar li span {
+  text-decoration: underline;
+  padding-left: 25px;
+  color: #3398db;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 30px;
+  cursor: pointer;
+}

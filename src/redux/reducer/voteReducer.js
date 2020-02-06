@@ -1,15 +1,10 @@
-const users = [{ username: 'jackson', password: 'password', user_id: 1 },
-{ username: 'supriya', password: 'password', user_id: 2 },
-{ username: 'suriya', password: 'password', user_id: 3 },
-{ username: 'mohanlal', password: 'password', user_id: 4 },
-{ username: 'surya', password: 'password', user_id: 4 },
-{ username: 'vijay', password: 'password', user_id: 5 },
-]
-export default (state = users, action) => {
+const vote = { javascript: 0, java: 0, php: 0, python: 0, go: 0 }
+export default (state = vote, action) => {
     switch (action.type) {
-        case "LOGIN_REQUEST":
+        case "VOTE":
             return {
-                ...state
+                ...state,
+                ...action.payload
             };
         default:
             return state;
