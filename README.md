@@ -5,7 +5,7 @@ In the project directory, you can run:
 
 username and password
 
-### `eve.holt@reqres.in , any password`
+### `eve.holt@reqres.in , cityslicka`
 
 fake api for login is used
 
